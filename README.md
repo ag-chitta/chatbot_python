@@ -73,4 +73,4 @@ def SOS(language):
 ```
 
 ## License
-pychatbot is licensed under a MIT license. See the LICENSE file for details.
+pychatbot is licensed under a MIT license. See the [LICENSE](https://github.com/ag-chitta/pychatbot/blob/main/LICENSE) file for details.
