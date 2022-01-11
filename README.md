@@ -8,6 +8,8 @@ pyChatbot is a flow builder with a set of APIs, such as a custodial wallet servi
 
 pychatbot was born out of the need of a low-entry level communication platform for users that have limited understanding of digital assets and are unlikely to use mobile or desktop extension wallets for the time being. 
 
+https://user-images.githubusercontent.com/97164446/148926244-b6910aef-9a0b-429e-8f7e-7484436ecac2.mp4
+
 ## use
 
 The scope of use for this SDK is to build your own flows and push them to your own cloud environment. This SDK offers the templates to get your up and running quickly. 
