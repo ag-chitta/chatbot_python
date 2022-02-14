@@ -9,9 +9,6 @@ from texts import texts
 from twilio.rest import Client
 from twilio.base.exceptions import TwilioRestException
 
-#account_sid = ""
-#auth_token = ""
-
 account_sid = ""
 auth_token = ""
 client = Client(account_sid, auth_token)
