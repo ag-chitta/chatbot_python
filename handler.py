@@ -9,12 +9,11 @@ from texts import texts
 from twilio.rest import Client
 from twilio.base.exceptions import TwilioRestException
 
-# curl https://studio.twilio.com/v2/Flows/FWc62957233ed5a2b65987060a7f3234a3 -u AC1753552456c3570307c7a8fa2ec5bce0:d729edd7ae55647e896fd339076947ff 
-#account_sid = "AC1753552456c3570307c7a8fa2ec5bce0"
-#auth_token = "d729edd7ae55647e896fd339076947ff"
+#account_sid = ""
+#auth_token = ""
 
-account_sid = "AC1753552456c3570307c7a8fa2ec5bce0"
-auth_token = "d729edd7ae55647e896fd339076947ff"
+account_sid = ""
+auth_token = ""
 client = Client(account_sid, auth_token)
 member = 'https://nbkmpn6z0m.execute-api.ap-south-1.amazonaws.com/stage/member'
 receive = 'https://fzfeh4kgbc.execute-api.ap-south-1.amazonaws.com/dev/receive'  # used in SOS,EOS but not created..
@@ -174,13 +173,13 @@ def main():
         jsonDump = json.dumps(flow)
         #print('final json object:', jsonDump)
         flow_validate = client.studio.flow_validate.update(
-                               commit_message='stage_release_v3.0.11', 
+                               commit_message='ADD RELEASE STAGE HERE', 
                                definition=jsonDump, 
-                               friendly_name='chittaBot_V3',
+                               friendly_name='',
                                status='published')    
         print(flow_validate.valid) 
-        flow = client.studio.flows('FWc62957233ed5a2b65987060a7f3234a3').update(
-                            commit_message='stage_release_v3.0.11',  
+        flow = client.studio.flows('ADD YOUR FLOW ID HERE').update(
+                            commit_message='ADD RELEASE STAGE HERE',  
                             definition=jsonDump, 
                             status='published')
         print(flow.friendly_name)
